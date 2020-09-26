@@ -5,6 +5,10 @@
     box-sizing: border-box;
   
 }
+:root{
+    --work-image-max-height: 600px;
+    --work-image-max-width:200px;
+}
 body{ 
     background-color: #8B94A3 ;
     font-family: Arial, Helvetica, sans-serif
@@ -41,7 +45,7 @@ header h1{
     font-size: 40px;
     background-color: #EFC88B;
     padding: 5px 10px 5px 50px;
-    margin: 3px 10px 5px 0px;
+    /* margin: 3px 10px 5px 0px; */
 }
 
 /* Hero Section */
@@ -55,13 +59,15 @@ header h1{
 }
 .hero-container h3 {
     padding: 5px 5px 5px 5px;
-    margin:3.5%;
+    /* margin:3.5%; */
     margin-top: 15%;
     background-color:#EFC88B;
 }
 
+
 /* About Me */
-.about-me-container{
+
+.section-container{
     display:flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -73,21 +79,23 @@ header h1{
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .work-grid-wrapper{
+    /*
     margin:10px;
-    flex:3;
     padding:10px;
+    */
     border-left: 3px solid #313D5A;
+    display:inline-block;
 }
 
 .work-grid-container {
     display: grid;
-    width:80%;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,max(1fr,var(--work-image-max-width)));
     grid-template-rows: repeat(3,1fr);
-    grid-gap:5%;
+    height:600px;
+    /* grid-gap:5%; */
 
 }
 .work-grid-item{
@@ -98,7 +106,6 @@ header h1{
   color: white;
   background-color: #EFC88B;
   position: relative;
-
 }
 
 .work-grid-text{
@@ -111,47 +118,40 @@ header h1{
     background-color:black;
  }
 .big-img{
-    width:100%;
+    /* width:100%; */
 }
 .small-img{
-    max-height:100px;
+    /* max-height:100px; */
 }
 
+.grid-image-size{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 /*Grid Items*/
 .item-1{
     grid-area: 1 / 1 / span 2 / span 2;
     /*background-image:url("../images/placeholder-image.png");*/
-    background-size:cover;
-    height:200px;
     min-width: 10px;
-    max-width: 400px; /*Maybe remove*/
+    /* max-width: 400px; Maybe remove */
     background:url("../images/placeholder-image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 .item-2 {
     background:url("../images/placeholder-image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+ 
 }
 
 .item-3 {
-    background:url("../images/placeholder-image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;    
+    background:url("../images/placeholder-image.png");   
 }
 
 .item-4 {
     background:url("../images/placeholder-image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat; 
-}
 
+}
 .item-5 {
     background:url("../images/placeholder-image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 /*Contact Me*/ 
 .contact-me-container{
@@ -161,9 +161,7 @@ header h1{
 }
 
 .contact-me-info{
-    flex: 3;
     display: flex;
-    display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -199,14 +197,17 @@ header h1{
     padding: 0px 20px 0px 20px;
     margin-top: 5%;
     direction:rtl;
-    justify-content: right;
+    justify-content: left;
+    margin:10px;
     
    
 }
 .section-text {
-    flex: 4 50%;
-    padding: 20px 20px 20px 20px;
-    margin-top: 5%;
-    margin-right:2%;
     border-left: 3px solid #313D5A;
+}
+
+.section-content{
+    flex:3;
+    padding: 20px;
+    margin: 10px;
 }
