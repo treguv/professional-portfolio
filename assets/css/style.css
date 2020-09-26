@@ -97,15 +97,62 @@ header h1{
   border:5px #E1D89F;
   color: white;
   background-color: #EFC88B;
+  position: relative;
 
 }
+
+.work-grid-text{
+   padding:15px 30px;
+   background-color:black;
+}
+
+.work-grid-text-small{
+    padding:5px 10px;
+    background-color:black;
+ }
+.big-img{
+    width:100%;
+}
+.small-img{
+    max-height:100px;
+}
+
 /*Grid Items*/
 .item-1{
     grid-area: 1 / 1 / span 2 / span 2;
     /*background-image:url("../images/placeholder-image.png");*/
     background-size:cover;
+    height:200px;
+    min-width: 10px;
+    max-width: 400px; /*Maybe remove*/
+    background:url("../images/placeholder-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
+.item-2 {
+    background:url("../images/placeholder-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.item-3 {
+    background:url("../images/placeholder-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
+}
+
+.item-4 {
+    background:url("../images/placeholder-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+
+.item-5 {
+    background:url("../images/placeholder-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 /*Contact Me*/ 
 .contact-me-container{
     display:flex;
