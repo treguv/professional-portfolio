@@ -23,10 +23,6 @@ header nav {
     margin-right:20px;
 }
 
-header nav ul {
-    
-}
-
 header nav ul li{
     display:inline;
     margin: 10px 10px 10px 10px;
@@ -68,7 +64,82 @@ header h1{
 .about-me-container{
     display:flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Work Grid */
+.work-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10px;
+}
+.work-grid-wrapper{
+    margin:10px;
+    flex:3;
+    padding:10px;
+    border-left: 3px solid #313D5A;
+}
+
+.work-grid-container {
+    display: grid;
+    width:80%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:5%;
+
+}
+.work-grid-item{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border:5px #E1D89F;
+  color: white;
+  background-color: #EFC88B;
+
+}
+/*Grid Items*/
+.item-1{
+    grid-area: 1 / 1 / span 2 / span 2;
+    /*background-image:url("../images/placeholder-image.png");*/
+    background-size:cover;
+}
+
+/*Contact Me*/ 
+.contact-me-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.contact-me-info{
+    flex: 3;
+    display: flex;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    border-left: 3px solid #313D5A;
+}
+
+.contact-me-info ul{
+    
+    list-style: none;
+}
+.contact-me-info ul li{
+    margin: 10px 10px 10px 10px;
+    align-items:center;
+    display:inline;
+}
+
+.contact-me-info ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size:15px;
+    padding: 5px 5px;
+    border-bottom: 2px solid  #E1D89F;
+   
 }
 
 
@@ -76,19 +147,19 @@ header h1{
 .section-header {
     font-size: 35px;
     font-style: bold;
-    border-right: 3px solid #313D5A;
     color: #313D5A;
-    flex: 1 25%;
+    flex: 1;
     padding: 0px 20px 0px 20px;
     margin-top: 5%;
     direction:rtl;
+    justify-content: right;
     
    
 }
 .section-text {
     flex: 4 50%;
-
     padding: 20px 20px 20px 20px;
     margin-top: 5%;
     margin-right:2%;
+    border-left: 3px solid #313D5A;
 }
