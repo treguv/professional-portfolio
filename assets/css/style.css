@@ -18,7 +18,11 @@ header {
     align-items: center;
    
 }
-
+.page-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-;
+}
 header nav {
     margin-right:20px;
 }
@@ -142,7 +146,13 @@ header h1{
    
 }
 
-
+.page-grid-container{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content:start;
+}
 /*General Css Classes*/
 .section-header {
     font-size: 35px;
@@ -152,14 +162,16 @@ header h1{
     padding: 0px 20px 0px 20px;
     margin-top: 5%;
     direction:rtl;
-    justify-content: right;
+    justify-content: space-between;
     
    
 }
 .section-text {
     flex: 4 50%;
+    /*
     padding: 20px 20px 20px 20px;
     margin-top: 5%;
     margin-right:2%;
+    */
     border-left: 3px solid #313D5A;
 }
