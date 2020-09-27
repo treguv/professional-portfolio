@@ -1,7 +1,7 @@
 # Professional Portfolio
 
 ## Purpose
-The purpose ofthis website is to display my work in programming and web-design to potential employers.
+The purpose of this website is to display my work in programming and web-design to potential employers.
 
 ## Built With
 * HTML
