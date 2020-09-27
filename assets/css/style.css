@@ -93,7 +93,7 @@ header h1{
 .work-grid-container {
     display: grid;
     grid-template-columns: repeat(3,max(1fr,var(--work-image-max-width)));
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
     height:600px;
     grid-gap:5px;
 
@@ -127,6 +127,10 @@ header h1{
 .main-work-header{
     font-size:x-large;
 }
+
+.secondary-work-header{
+    font-size:medium;
+}
 .work-grid-text-small{
     padding:5px 10px;
     background-color:black;
@@ -153,20 +157,24 @@ header h1{
 }
 
 .item-2 {
-    background:url("../images/placeholder-image.png");
+    background:url("../images/missile-flight.png");
+    grid-area:3/1/span 2 /span 1;
+    background-size:cover;
  
 }
 
 .item-3 {
     background:url("../images/placeholder-image.png");   
+    grid-area:3/2/span 2 /span 1;
 }
 
 .item-4 {
     background:url("../images/placeholder-image.png");
-
+    grid-area:5/1/span 2 /span 1;
 }
 .item-5 {
     background:url("../images/placeholder-image.png");
+    grid-area:5/2/span 2 /span 1;
 }
 /*Contact Me*/ 
 .contact-me-container{
