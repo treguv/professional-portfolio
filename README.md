@@ -14,4 +14,3 @@ https://treguv.github.io/professional-portfolio/
 Vladislav Tregubov
 
 ![Image of webpage](/assets/images/webpage-screenshot.png)
-![Screenshot of webpage](/assets/images/webpage.png)
