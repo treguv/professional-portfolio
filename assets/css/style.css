@@ -278,9 +278,10 @@ header h1{
         display: block;
         text-align: center;
     }
-    header nav ul li {
-        display: inline-block;
+    header nav ul li  {
+        display:block;
         text-align: center;
-        background-color:red;
+        justify-content: center;
     }
+
   }
