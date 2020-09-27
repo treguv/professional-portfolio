@@ -45,7 +45,7 @@ header h1{
     font-size: 40px;
     background-color: #EFC88B;
     padding: 5px 10px 5px 50px;
-    /* margin: 3px 10px 5px 0px; */
+
 }
 
 /* Hero Section */
@@ -234,3 +234,39 @@ header h1{
     padding: 20px;
     margin: 10px;
 }
+/* Responsive for mobile */
+@media screen and (max-width:865px){
+    header { 
+        justify-content: center;
+        position: relative;
+        padding-bottom: 10px;;
+    }
+    header h1{
+       width:100%; 
+       text-align: center;
+       padding:0;
+    }
+
+    .section-container{
+        flex-direction: column;
+    }
+    /* Section Content and headers */
+    .section-content{
+        border:none;
+        justify-content: center;
+    }
+    .section-header{
+        border-bottom: 3px solid;
+        text-align:center;
+        direction:ltr;
+    }
+    
+    .contact-me-info{
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
