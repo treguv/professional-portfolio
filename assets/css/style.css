@@ -95,7 +95,7 @@ header h1{
     grid-template-columns: repeat(3,max(1fr,var(--work-image-max-width)));
     grid-template-rows: repeat(3,1fr);
     height:600px;
-    /* grid-gap:5%; */
+    grid-gap:5px;
 
 }
 .work-grid-item{
@@ -106,17 +106,32 @@ header h1{
   color: white;
   background-color: #EFC88B;
   position: relative;
+  opacity:0.5;
+  transition: 0.5s;
 }
 
+.work-grid-item:hover{
+    opacity:100%;
+}
 .work-grid-text{
    padding:15px 30px;
    background-color:black;
+
+
 }
 
+.work-link{
+    text-decoration: none;
+    color: white;
+}
+.main-work-header{
+    font-size:x-large;
+}
 .work-grid-text-small{
     padding:5px 10px;
     background-color:black;
- }
+}
+
 .big-img{
     /* width:100%; */
 }
@@ -134,7 +149,7 @@ header h1{
     /*background-image:url("../images/placeholder-image.png");*/
     min-width: 10px;
     /* max-width: 400px; Maybe remove */
-    background:url("../images/placeholder-image.png");
+    background:url("../images/run-buddy.jpg");
 }
 
 .item-2 {
