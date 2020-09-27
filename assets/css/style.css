@@ -154,6 +154,7 @@ header h1{
     min-width: 10px;
     /* max-width: 400px; Maybe remove */
     background:url("../images/run-buddy.jpg");
+    background-size:cover;
 }
 
 .item-2 {
@@ -166,15 +167,18 @@ header h1{
 .item-3 {
     background:url("../images/placeholder-image.png");   
     grid-area:3/2/span 2 /span 1;
+    background-size:cover;
 }
 
 .item-4 {
     background:url("../images/placeholder-image.png");
     grid-area:5/1/span 2 /span 1;
+    background-size:cover;
 }
 .item-5 {
     background:url("../images/placeholder-image.png");
     grid-area:5/2/span 2 /span 1;
+    background-size:cover;
 }
 /*Contact Me*/ 
 .contact-me-container{
@@ -261,13 +265,22 @@ header h1{
         text-align:center;
         direction:ltr;
     }
-    
-    .contact-me-info{
-    }
-
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 605px) {
     body {
       background-color: lightblue;
+    }
+    .contact-me-info{
+
+
+    }
+    .contact-me-info ul li {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li {
+        display: inline-block;
+        text-align: center;
+        background-color:red;
     }
   }
