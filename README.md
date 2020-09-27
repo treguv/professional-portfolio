@@ -12,5 +12,5 @@ https://treguv.github.io/professional-portfolio/
 
 ## Made By
 Vladislav Tregubov
-
+## Image of Webpage
 ![Image of webpage](/assets/images/webpage-screenshot.PNG)
