@@ -283,5 +283,7 @@ header h1{
         text-align: center;
         justify-content: center;
     }
-
+    .hero-container {
+        display:none;
+    }
   }
